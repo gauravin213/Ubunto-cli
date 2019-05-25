@@ -1,0 +1,67 @@
+#1. Cofigur server on ubuntu 
+http://usefulangle.com/post/35/how-to-install-linux-apache-mysql-php-phpmyadmin-lamp-stack-on-ubuntu-16-04
+
+-Check versions
+apache2 -v
+mysqld --version
+php -v
+mysql -V
+
+-Install php version 7.2
+https://www.rosehosting.com/blog/how-to-install-php-7-2-on-ubuntu-16-04/
+
+
+#2. Install application 
+https://snapcraft.io/store
+
+#3.  Install The nvx for node js:
+Site 1: https://www.liquidweb.com/kb/how-to-install-nvm-node-version-manager-for-node-js-on-ubuntu-12-04-lts/
+Site 2: https://tecadmin.net/install-nodejs-with-nvm/
+nvm use v10.15.0
+
+
+#4. Install React js
+Site:https://www.techomoro.com/how-to-install-and-setup-a-react-app-on-ubuntu-18-04-1/
+
+
+#5. Check agular js version
+1. ng version
+2. ng v
+3. ng -v
+
+ng serve --open --port 
+
+
+/*
+* Upload project to git hub
+*/ 
+
+https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line
+
+-cd /var/www/html/{ProjectName}
+
+Run the following cpmmand 
+
+-Initialize the local directory as a Git repository.
+git init
+
+-Add the files in your new local repository. This stages them for the first commit.
+git add .
+
+Commit the files that you've staged in your local repository.
+git commit -m "First commit"
+
+
+-where your local repository will be pushed.
+git remote add origin remote repository URL
+
+-Verifies the new remote URL
+git remote -v
+
+
+-Push the changes in your local repository to GitHub.
+git push origin master
+
+/*
+* Upload project to git hub
+*/ 
