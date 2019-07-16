@@ -65,3 +65,60 @@ git push origin master
 /*
 * Upload project to git hub
 */ 
+
+
+
+
+/*
+* Mysql cli 
+*/
+
+Set path  
+ 
+zip rnd -r rnd/
+
+
+
+mysqldump -u {username} -p -C ems > /var/www/html/ems.sql
+
+mysql -u root -p magev230sandbox < /var/www/html/magev230.sql
+
+
+
+Import database:
+mysql -u user_name -p database_name < dump.sql
+
+mysql -u root -p contractors-license < contra39_clmage2.sql
+
+Export database:
+mysqldump -u user_name -p database_name > dump.sql
+
+mysqldump -u root -p magev230 > magev230.sql
+
+
+
+mysql -u root -p //magev230sandbox
+
+DROP DATABASE tutorial_database;
+
+DROP DATABASE IF EXISTS tutorial_database;
+
+SHOW DATABASES;
+
+mysql> show tables;
+
+
+
+CREATE DATABASE tutorial_database;
+
+CREATE DATABASE IF NOT EXISTS tutorial_database;
+
+/*
+* Mysql cli 
+*/
+
+
+/*
+* Create zip file
+*/
+zip -r filename.zip folder
