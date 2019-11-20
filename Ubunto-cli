@@ -25,9 +25,8 @@ Site:https://www.techomoro.com/how-to-install-and-setup-a-react-app-on-ubuntu-18
 
 
 #5. Check agular js version
-1. ng version
-2. ng v
-3. ng -v
+Site: https://tecadmin.net/install-angular-on-ubuntu/
+npm update toh-pt6
 
 ng serve --open --port 
 
@@ -53,7 +52,8 @@ git commit -m "First commit"
 
 
 -where your local repository will be pushed.
-git remote add origin remote repository URL
+git remote add origin remote repository URL 
+git remote add origin https://github.com/gauravin213/wp-api-plugin.git
 
 -Verifies the new remote URL
 git remote -v
@@ -66,7 +66,9 @@ git push origin master
 * Upload project to git hub
 */ 
 
+checkout-step-shipping 
 
+<!-- ko foreach: getRegion('amazon-pay-button') -->
 
 
 /*
@@ -79,27 +81,32 @@ zip rnd -r rnd/
 
 
 
-mysqldump -u {username} -p -C ems > /var/www/html/ems.sql
-
-mysql -u root -p magev230sandbox < /var/www/html/magev230.sql
-
-
-
 Import database:
-mysql -u user_name -p database_name < dump.sql
+mysql -u {user_name} -p {database_name} < {path/dump.sql}
 
 mysql -u root -p contractors-license < contra39_clmage2.sql
+
+mysql -u root -p contractorslicense < /var/www/html/contractorslicense/contra39_clmage2.sql
+
+mysql -u root -p prosport_db_2 < prosport_db.sql
+
+
+
+mysql -u root -p contractorslicen_clmage2 < /backup_sql/contra39_clmage2_3.sql
+
+
 
 Export database:
 mysqldump -u user_name -p database_name > dump.sql
 
-mysqldump -u root -p magev230 > magev230.sql
+mysqldump -u root -p prosport_db_2 > dump.sql
 
 
 
-mysql -u root -p //magev230sandbox
 
-DROP DATABASE tutorial_database;
+mysql -u root -p 
+
+DROP DATABASE contractors-license;
 
 DROP DATABASE IF EXISTS tutorial_database;
 
@@ -113,6 +120,11 @@ CREATE DATABASE tutorial_database;
 
 CREATE DATABASE IF NOT EXISTS tutorial_database;
 
+
+
+Download File:
+wget http://pubfiles.nexcess.net/magento/ce-packages/magento2-with-samples-2.3.0.tar.gz
+
 /*
 * Mysql cli 
 */
@@ -122,3 +134,46 @@ CREATE DATABASE IF NOT EXISTS tutorial_database;
 * Create zip file
 */
 zip -r filename.zip folder
+
+
+
+
+
+
+
+<IfModule mime_module> 
+AddType application/x-httpd-ea-php71 .php .php7 .phtml
+</IfModule>
+
+
+
+
+
+
+
+
+
+
+
+
+php -v
+
+sudo add-apt-repository ppa:ondrej/php
+
+sudo apt-get update
+
+sudo apt-get install php7.1
+
+sudo apt-get install php7.1-cli php7.1-common php7.1-json php7.1-opcache php7.1-mysql php7.1-mbstring php7.1-mcrypt php7.1-zip php7.1-fpm
+
+sudo a2dismod php7.2
+
+sudo a2enmod php7.1
+
+sudo service apache2 restart
+
+sudo a2dismod php7.0
+
+sudo a2enmod php7.1
+
+sudo update-alternatives --set php /usr/bin/php7.2
