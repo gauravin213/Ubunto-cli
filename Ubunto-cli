@@ -1,6 +1,12 @@
 #1. Cofigur server on ubuntu 
 http://usefulangle.com/post/35/how-to-install-linux-apache-mysql-php-phpmyadmin-lamp-stack-on-ubuntu-16-04
 
+After Installing phpmyadmin 
+sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
+sudo a2enconf phpmyadmin
+sudo service apache2 reload
+
+
 -Check versions
 apache2 -v
 mysqld --version
@@ -53,7 +59,9 @@ git commit -m "First commit"
 
 -where your local repository will be pushed.
 git remote add origin remote repository URL 
-git remote add origin https://github.com/gauravin213/wp-api-plugin.git
+git remote add origin https://github.com/gauravin213/laravelblog-v3.git
+OR
+git remote set-url origin https://github.com/gauravin213/laravelblog-v3.git
 
 -Verifies the new remote URL
 git remote -v
@@ -61,6 +69,7 @@ git remote -v
 
 -Push the changes in your local repository to GitHub.
 git push origin master
+git pull origin master
 
 /*
 * Upload project to git hub
@@ -101,7 +110,9 @@ mysqldump -u user_name -p database_name > dump.sql
 
 mysqldump -u root -p prosport_db_2 > dump.sql
 
+mysqldump -u prosport_prospor -p prosport_db2 > dump.sql
 
++{^OU]jnQ;&B
 
 
 mysql -u root -p 
@@ -177,3 +188,11 @@ sudo a2dismod php7.0
 sudo a2enmod php7.1
 
 sudo update-alternatives --set php /usr/bin/php7.2
+
+
+
+Run Instaer
+
+- sudo chmod +x Hubstaff-1.5.9-6ca83ce3.sh 
+
+- ./Hubstaff-1.5.9-6ca83ce3.sh
