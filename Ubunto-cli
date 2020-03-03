@@ -68,8 +68,12 @@ git remote -v
 
 
 -Push the changes in your local repository to GitHub.
+create
 git push origin master
-git pull origin master
+
+
+update 
+git push -f origin master
 
 /*
 * Upload project to git hub
